@@ -1,0 +1,6 @@
+git format-patch -1 HEAD
+git apply changes.patch
+git apply --check changes.patch
+git diff > changes.patch
+git diff --staged > changes.patch
+git log main..feature/product-update --oneline
